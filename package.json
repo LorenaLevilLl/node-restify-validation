@@ -1,8 +1,8 @@
 {
-  "name": "node-restify-validation-fixed",
-  "version": "1.3.2",
+  "name": "node-restify-validation",
+  "version": "1.3.3",
   "author": {
-    "name": "Yurii Antonov"
+    "name": "Lorena Levil"
   },
   "contributors": [
     "Marcos Sanz",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/yuraantonov11/node-restify-validation.git"
+    "url": "https://github.com/LorenaLevilLl/node-restify-validation.git"
   },
   "bugs": {
     "url": "https://github.com/z0mt3c/node-restify-validation/issues"
