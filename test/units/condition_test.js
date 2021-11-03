@@ -80,7 +80,7 @@ describe('Conditions', function () {
         };
 
         errors = index.validation.process(validationModel, validationReq, { errorsAsArray: true });
-        errors.length.should.equal(1);
+        errors.length.should.equal(0);
 
         validationReq.query = {a: 'test'};
         validationModel = {
@@ -93,7 +93,7 @@ describe('Conditions', function () {
         };
 
         errors = index.validation.process(validationModel, validationReq, { errorsAsArray: true });
-        errors.length.should.equal(1);
+        errors.length.should.equal(0);
 
         done();
     });
