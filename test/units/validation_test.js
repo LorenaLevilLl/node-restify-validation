@@ -448,8 +448,8 @@ describe('Validation', function () {
                 var validationReq = {
                     body: {
                         numbers: [1, 5, 67],
-                        numbersInvalid: [1, 5, "a", 67, "b"],
-                        numbersAndNull: [1, 5, null, 67]
+                        numbersInvalid: ['1', '5', "a", 67, "b"],
+                        numbersAndNull: ['1', '5', null, 67]
                     }
                 };
 
@@ -632,8 +632,8 @@ describe('Validation', function () {
                 var validationReq = {
                     body: {
                         numbers: { a: 1, b: 5, c: 67 },
-                        numbersInvalid: { a: 1, b: 5, c: "a", d: 67, e: "b" },
-                        numbersAndNull: { a: 1, b: 5, c: null, d: 67 }
+                        numbersInvalid: { a: '1', b: '5', c: "a", d: 67, e: "b" },
+                        numbersAndNull: { a: '1', b: '5', c: null, d: 67 }
                     }
                 };
 
@@ -679,7 +679,7 @@ describe('Validation', function () {
                         name: "Bob",
                         age: 50,
                         preferences: {
-                            favoriteNumber: -333
+                            favoriteNumber: '-333'
                         }
                     },
                     strVal: "I'm just a string",
