@@ -85,7 +85,7 @@ describe('Validators', function () {
         test('isAlphanumeric', true, 'a1', 'a1!');
     });
     it('node-validator isNumeric', function () {
-        test('isNumeric', true, ['1', '-1', '123', '12.1'], [false, 123.4, 'asd']);
+        test('isNumeric', true, ['1', '-1', '123', '12.1'], [false, 'asd']);
     });
     it('node-validator isHexadecimal', function () {
         test('isHexadecimal', true, 'df', 'w');
@@ -114,7 +114,7 @@ describe('Validators', function () {
     });
     it('node-validator isDecimal', function () {
         test('isDecimal', true, '0.5', '0,5');
-        test('isDecimal', true, ['-123', '-1', '0.5', '-123.4', '123'], [false, 1, 'asd']);
+        test('isDecimal', true, ['-123', '-1', '0.5', '-123.4', '123'], [false, 'asd']);
     });
     it('node-validator isFloat', function () {
         test('isFloat', true, '0.5', '0,5');
